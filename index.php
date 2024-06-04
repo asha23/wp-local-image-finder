@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name:        	BrightLocal - Local Image Proxy
- * Description:         (DISABLE ON THE PRODUCTION SERVER) If there are missing images in your WordPress site, this plugin will redirect them to the live server.
+ * Description:         If there are missing images in your WordPress site, this plugin will redirect them to the live server. This should not be enabled on the live server.
  * Author:              Ash Whiting for BrightLocal
  * Author URI:          https://brightlocal.com
  * Text Domain:         bl-local-images
- * Version:             1.0.0
+ * Version:             1.0.1
  * License:             GPL v2 or later
  * License URI:         https://www.gnu.org/licenses/gpl-2.0.html
  * GitHub Plugin URI: 	https://github.com/asha23/wp-local-image-finder
@@ -16,8 +16,7 @@
 
 add_action('template_redirect', 'image_proxy_template_redirect', 99);
 
-function image_proxy_template_redirect()
-{
+function image_proxy_template_redirect(){
     $live_server = 'https://brightlocal.com'; // Replace with your live server URL
     $request_uri = $_SERVER['REQUEST_URI'];
     $uploads_regex = '/^\/wp-content\/uploads\/(\d+)\/(\d+)\/(.*)$/';
