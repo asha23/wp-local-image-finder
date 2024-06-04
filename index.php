@@ -4,7 +4,7 @@
  * Description:         (DISABLE ON THE PRODUCTION SERVER) If there are missing images in your WordPress site, this plugin will redirect them to the live server.
  * Author:              Ash Whiting for BrightLocal
  * Author URI:          https://brightlocal.com
- * Text Domain:         bl-local-rankflux
+ * Text Domain:         bl-local-images
  * Version:             1.0.0
  * License:             GPL v2 or later
  * License URI:         https://www.gnu.org/licenses/gpl-2.0.html
