@@ -1,0 +1,6 @@
+{
+  "name": "asha23/wp-local-image-finder",
+  "description": "Finds images on live if you do not have them locally.",
+  "type": "wordpress-plugin",
+  "license": "GPL-2.0-or-later"
+}
